@@ -6,11 +6,9 @@ public abstract class Character {
     WeaponBehavior weapon;
 
     // Methods
-
     public void setWeapon(WeaponBehavior weapon) {
         this.weapon = weapon;
     }
-
 
     public void fight(){
         weapon.useWeapon();

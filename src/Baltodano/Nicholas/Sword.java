@@ -2,7 +2,7 @@ package Baltodano.Nicholas;
 
 public class Sword implements WeaponBehavior{
 
-
+    // Methods
     @Override
     public void useWeapon(String playerName) {
         System.out.println(playerName + " has swung their sword");

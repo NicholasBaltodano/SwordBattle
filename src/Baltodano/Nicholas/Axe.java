@@ -2,7 +2,7 @@ package Baltodano.Nicholas;
 
 public class Axe implements WeaponBehavior{
 
-
+    // Methods
     @Override
     public void useWeapon(String playerName) {
         System.out.println(playerName + " has chopped with their Axe");
