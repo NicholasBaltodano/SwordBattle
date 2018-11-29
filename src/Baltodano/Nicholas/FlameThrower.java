@@ -9,7 +9,6 @@ public class FlameThrower implements WeaponBehavior{
         System.out.println("The enemy has been burned!");
     }
 
-    // Methods
     @Override
     public void useWeapon() {
         System.out.println("Flame thrower was used!");

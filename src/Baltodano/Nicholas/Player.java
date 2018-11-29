@@ -2,7 +2,7 @@ package Baltodano.Nicholas;
 
 public class Player extends Character {
 
-    //Variables
+    // Variables
     private String name;
 
     // Constructor

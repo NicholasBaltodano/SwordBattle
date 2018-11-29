@@ -63,7 +63,7 @@ public class Main {
         }
     }
 
-    //
+    // End the game with a message
     private static void endGame(){
         System.out.println("\n\nCongratulations! You have defeated your enemy.");
         System.out.println("Thank you for running this game ;D");
