@@ -10,11 +10,13 @@ public class Main {
 
         // Start a fight
         player.fight();
+
+        endGame();
     }
 
 
     // Gets input from the user to select their weapon choice
-    public static char getWeaponChoice(){
+    private static char getWeaponChoice(){
 
         // Variables
         Scanner scanner = new Scanner(System.in);
@@ -28,23 +30,24 @@ public class Main {
             System.out.println("S - Sword");
             System.out.println("A - Axe");
             System.out.println("F - Flame Thrower");
+            System.out.println("==========================");
+            System.out.print("Please enter your choice: ");
 
-            input = scanner.nextLine();
-            input.toLowerCase();
+            input = scanner.nextLine().toLowerCase();
             choice = input.charAt(0);
 
             if(choice == 's' || choice == 'a' || choice == 'f')
                 selectionNotMade = false;
             else
-                System.out.println("Please select a valid choice!");
+                System.out.println("\n\nPlease select a valid choice!");
 
-        }while (selectionNotMade == true);
+        }while (selectionNotMade);
 
         return choice;
     }
 
     // This assign the user their weapon choice.
-    public static void selectWeapon(Player player){
+    private static void selectWeapon(Player player){
         switch (getWeaponChoice()){
             case 's':
                 player.setWeapon(new Sword());
@@ -58,6 +61,12 @@ public class Main {
             default:
                 System.out.println("Possible error");
         }
+    }
+
+    //
+    private static void endGame(){
+        System.out.println("\n\nCongratulations! You have defeated your enemy.");
+        System.out.println("Thank you for running this game ;D");
     }
 }
 

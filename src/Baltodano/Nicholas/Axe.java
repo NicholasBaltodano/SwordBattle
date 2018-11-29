@@ -5,7 +5,7 @@ public class Axe implements WeaponBehavior{
     // Methods
     @Override
     public void useWeapon(String playerName) {
-        System.out.println(playerName + " has chopped with their Axe");
+        System.out.println("\n\n" + playerName + " has chopped with their Axe");
         System.out.println("The enemy has been attacked!");
     }
 

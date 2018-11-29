@@ -5,7 +5,7 @@ public class FlameThrower implements WeaponBehavior{
     // Methods
     @Override
     public void useWeapon(String playerName) {
-        System.out.println(playerName + " has used their Flamethrower");
+        System.out.println("\n\n" + playerName + " has used their Flamethrower");
         System.out.println("The enemy has been burned!");
     }
 

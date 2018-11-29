@@ -3,11 +3,11 @@ package Baltodano.Nicholas;
 public class Player extends Character {
 
     //Variables
-    String name;
+    private String name;
 
     // Constructor
     Player() {
-       name = "player";
+       name = "Player";
     }
 
     // Methods

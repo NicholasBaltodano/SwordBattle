@@ -5,7 +5,7 @@ public class Sword implements WeaponBehavior{
     // Methods
     @Override
     public void useWeapon(String playerName) {
-        System.out.println(playerName + " has swung their sword");
+        System.out.println("\n\n" + playerName + " has swung their sword");
         System.out.println("The enemy has been attacked!");
     }
 
